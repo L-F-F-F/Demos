@@ -43,5 +43,7 @@ Demo：[双机对抗AI](https://github.com/L-F-F-F/Demos/blob/master/AirAI/AI.mp
 
 3）探测器接收处理要考虑自身焦距以及噪声，同时要处理镜头是否面对太阳而带来的光晕效果变化。处理之后基于Unity3D引擎渲染，计算得到的辐照强度要转化成显示亮度，编写好shader后赋予模型。
 
-视野中包含有太阳的仿真红外图像：![](https://i.imgur.com/3NSoZ7M.png)
-视频demo：
+例如视野中包含有太阳的仿真红外图像：![](https://i.imgur.com/3NSoZ7M.png)
+视频demo：[IR](https://github.com/L-F-F-F/Demos/blob/master/IRSim/IR.mp4)
+
+相关工作已申请专利：201811083437.0
