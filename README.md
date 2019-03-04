@@ -5,7 +5,7 @@
 
 1）总控
 
-WPF界面，主要负责指令输入、任务配置、Thrusrmaster摇杆输入以及在线数据显示部分。为保证仿真精度，采用IntervalZero RTX实时操作系统，仿真步长10ms，总控与动力学解算部分交互方式采用共享内存：![](https://i.imgur.com/Kbon2oX.png)
+WPF界面，主要负责指令输入、任务配置、Thrusrmaster摇杆输入以及在线数据显示部分。为保证仿真精度，采用IntervalZero RTX实时操作系统，微秒级精度，总控与动力学解算部分交互方式采用共享内存：![](https://i.imgur.com/Kbon2oX.png)
 
 
 2）动力学解算
