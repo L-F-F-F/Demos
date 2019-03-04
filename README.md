@@ -32,4 +32,16 @@ Demo：[双机对抗AI](https://github.com/L-F-F-F/Demos/blob/master/AirAI/AI.mp
 项目获“第三届中国创新挑战赛暨中关村第二届科技军民融合专题赛优秀奖”。
 
 ## 3 遥感图像检测系统
-针对无人机、卫星等俯拍视角，构建遥感图像数据集，手工标注位置、类别信息，所有图像来源于Google Earth，数据集包含低空拍摄的高分辨率战斗机，高空拍摄的机场、港口、雷达等目标。遥感图像中战斗机检测详见[YOLO-v3-C](https://github.com/L-F-F-F/yolo-v3-darknet)和[YOLO-v3-pytorch](https://github.com/L-F-F-F/yolo-v3-pytorch)两个仓库。另外有视频demo：
+针对无人机、卫星等俯拍视角，构建遥感图像数据集，手工标注位置、类别信息，所有图像来源于Google Earth，数据集包含低空拍摄的高分辨率战斗机，高空拍摄的机场、港口、雷达等目标。遥感图像中战斗机检测详见[YOLO-v3-C](https://github.com/L-F-F-F/yolo-v3-darknet)和[YOLO-v3-pytorch](https://github.com/L-F-F-F/yolo-v3-pytorch)两个仓库。另外视频demo：[战斗机检测YOLO-v3](https://github.com/L-F-F-F/Demos/blob/master/Detection/aircraftDetection.mp4)
+
+## 4 空中红外场景仿真系统
+红外成像利用温差进行判别，可以克服视觉上的障碍而发现目标。流程框图如下：![](https://i.imgur.com/4QTwvwZ.png)
+
+1）红外辐射特性计算部分：温度辐射主要来源于自身辐射（飞行器因与大气剧烈摩擦的蒙皮温度辐射、太阳直射带来的温度变化）、大气散射、反射（蒙皮不同材料反射太阳辐射、地表反射）。依据的理论主要为维恩位移定律、普朗克黑体辐射定律、玻尔兹曼定律、蒙皮温度辐射经验公式等，依此计算飞行器红外辐射。
+
+2）辐射在到达探测器前，要经过大气衰减。依据MODTRAN（中等光谱分辨率大气透过率及辐射传输算法和计算模型）计算不同经纬度、季节、天气、温度湿度、气体分子含量对红外波段的电磁波吸收特性。
+
+3）探测器接收处理要考虑自身焦距以及噪声，同时要处理镜头是否面对太阳而带来的光晕效果变化。处理之后基于Unity3D引擎渲染，计算得到的辐照强度要转化成显示亮度，编写好shader后赋予模型。
+
+视野中包含有太阳的仿真红外图像：![](https://i.imgur.com/3NSoZ7M.png)
+视频demo：
