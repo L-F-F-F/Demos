@@ -32,7 +32,7 @@ Demo：[双机对抗AI](https://github.com/L-F-F-F/Demos/blob/master/AirAI/AI.mp
 项目获“第三届中国创新挑战赛暨中关村第二届科技军民融合专题赛优秀奖”。
 
 ## 3 遥感图像检测系统
-针对无人机、卫星等俯拍视角，构建遥感图像数据集，手工标注位置、类别信息，所有图像来源于Google Earth，数据集包含低空拍摄的高分辨率战斗机，高空拍摄的机场、港口、雷达等目标。遥感图像中战斗机检测详见[YOLO-v3-C](https://github.com/L-F-F-F/yolo-v3-darknet)和[YOLO-v3-pytorch](https://github.com/L-F-F-F/yolo-v3-pytorch)两个仓库。另外视频demo：[战斗机检测YOLO-v3](https://github.com/L-F-F-F/Demos/blob/master/Detection/aircraftDetection.mp4)
+针对无人机、卫星等俯拍视角，构建遥感图像数据集，手工标注位置、类别信息，所有图像来源于Google Earth，数据集包含低空拍摄的高分辨率战斗机，高空拍摄的机场、港口、雷达、导弹阵地等目标。遥感图像中战斗机检测详见[YOLO-v3-C](https://github.com/L-F-F-F/yolo-v3-darknet)和[YOLO-v3-pytorch](https://github.com/L-F-F-F/yolo-v3-pytorch)两个仓库。另外视频demo：[战斗机检测YOLO-v3](https://github.com/L-F-F-F/Demos/blob/master/Detection/aircraftDetection.mp4)，[导弹阵地检测系统](https://github.com/L-F-F-F/Demos/blob/master/Detection/SAM-Detection.mp4)
 
 ## 4 空中红外场景仿真系统
 红外成像利用温差进行判别，可以克服视觉上的障碍而发现目标。流程框图如下：![](https://i.imgur.com/4QTwvwZ.png)
